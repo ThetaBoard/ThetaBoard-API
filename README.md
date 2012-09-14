@@ -15,5 +15,5 @@ If you're making a public integration with ThetaBoard, you must use OAuth 2. Thi
 
 Read the authentication guide to get started.
 
-
-
+Table of Contents
+=================
