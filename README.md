@@ -6,6 +6,12 @@ Help shape the ThetaBoard API.
 Making a Request
 ================
 
+All URLs start with https://api.thetaboard.com/[YOUR-ACCOUNT-ID]/v1/. SSL only. The path is prefixed with the account id and the API version. If we change the API in backward-incompatible ways, we'll bump the version marker and maintain stable support for the old URLs.
+
+To make a request for all the projects on your account, you'd append the projects index path to the base url to form something like https://api.thetaboard.com/[YOUR-ACCOUNT-ID]/v1/boards.json. In curl, that looks like:
+
+`curl -u user:pass -H 'User-Agent: MyApp (yourname@example.com)' https://api.thetaboard.com/123456789/v1/boards.json`
+
 Authentication
 ==============
 
