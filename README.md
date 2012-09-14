@@ -14,11 +14,11 @@ To make a request for all the projects on your account, you'd append the project
 
 To create something, it's the same deal except you also have to include the Content-Type header and the JSON data:
 
-`curl -u username:password \
-  -H 'Content-Type: application/json' \
-  -H 'User-Agent: MyApp (yourname@example.com)' \
-  -d '{ "name": "My new ThetaBoard!" }' \
-  https://api.thetaboard.com/123456789/v1/boards.json`
+    curl -u username:password \
+      -H 'Content-Type: application/json' \
+      -H 'User-Agent: MyApp (yourname@example.com)' \
+      -d '{ "name": "My new ThetaBoard!" }' \
+      https://api.thetaboard.com/123456789/v1/boards.json`
 
 Authentication
 ==============
