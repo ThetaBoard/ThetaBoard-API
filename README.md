@@ -3,6 +3,15 @@ ThetaBoard-API
 
 Help shape the ThetaBoard API.
 
+Authentication
+==============
+
+If you're making a private integration with ThetaBoard for your own purposes, you can use HTTP Basic authentication. This is secure since all requests in the new Basecamp use SSL.
+
+If you're making a public integration with ThetaBoard, you must use OAuth 2. This allows users to authorize your application to use Basecamp on their behalf without having to copy/paste API tokens or touch sensitive login info.
+
+Read the authentication guide to get started.
+
 Making a Request
 ================
 
@@ -19,15 +28,24 @@ To create something, it's the same deal except you also have to include the Cont
       -H 'User-Agent: MyApp (yourname@example.com)' \
       -d '{ "name": "My new ThetaBoard!" }' \
       https://api.thetaboard.com/123456789/v1/boards.json`
-
-Authentication
-==============
-
-If you're making a private integration with ThetaBoard for your own purposes, you can use HTTP Basic authentication. This is secure since all requests in the new Basecamp use SSL.
-
-If you're making a public integration with ThetaBoard, you must use OAuth 2. This allows users to authorize your application to use Basecamp on their behalf without having to copy/paste API tokens or touch sensitive login info.
-
-Read the authentication guide to get started.
-
-Table of Contents
-=================
+      
+API Endpoints
+=============
+https://api.thetaboard.com/123456789/v1/users
+https://api.thetaboard.com/123456789/v1/boards
+https://api.thetaboard.com/123456789/v1/boards/1
+https://api.thetaboard.com/123456789/v1/boards/1/columns
+https://api.thetaboard.com/123456789/v1/boards/1/labels
+https://api.thetaboard.com/123456789/v1/boards/1/users
+https://api.thetaboard.com/123456789/v1/boards/1/cards
+https://api.thetaboard.com/123456789/v1/boards/1/cards/1
+https://api.thetaboard.com/123456789/v1/boards/1/cards/1/checklists
+https://api.thetaboard.com/123456789/v1/boards/1/cards/1/checklists/1
+https://api.thetaboard.com/123456789/v1/boards/1/cards/1/checklists/1/items
+https://api.thetaboard.com/123456789/v1/boards/1/cards/1/checklists/1/items/1
+https://api.thetaboard.com/123456789/v1/boards/1/cards/1/comments
+https://api.thetaboard.com/123456789/v1/boards/1/cards/1/comments/1
+https://api.thetaboard.com/123456789/v1/boards/1/cards/1/uploads
+https://api.thetaboard.com/123456789/v1/boards/1/cards/1/uploads/1
+https://api.thetaboard.com/123456789/v1/boards/1/cards/1/users
+https://api.thetaboard.com/123456789/v1/boards/1/cards/1/users/1
